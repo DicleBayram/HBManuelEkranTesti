@@ -1,0 +1,32 @@
+Feature: Functionality of Application
+
+  Scenario: AddToBasket
+    * https://www.hepsiburada.com/kopek-mamalari-c-560001 url adresine gidilir
+    * Herhangi bir ürün seçilir
+    * Adet miktarý '2' seçilir
+    * Sepete ekle butonuna týklanýr
+    * 'Ürün baþarýlý þekilde sepetinize eklendi' içerikli mesaj görüntülenir
+
+Scenario: FilterControl
+* https://www.hepsiburada.com/kopek-mamalari-c-560001 url adresine gidilir
+* Marka olarak 'Milo' secilir
+* Ürün puaný '3' seçilir
+* Tat olarak 'Kuzu' seçilir
+* Gramaj 15 kg secilir
+* Seçilen herhangi bir ürünün kriterlere uygun olmasý beklenir
+
+Scenario: ClearFilterControl
+* https://www.hepsiburada.com/kopek-mamalari-c-560001 url adresine gidilir
+* Marka olarak 'Milo' secilir
+* Filtreleri temizle butonuna týklanýr
+* Filtrelerin temizlenmiþ olmasý beklenir
+
+Scenario: ControlofFeedBackResultMessage
+* https://www.hepsiburada.com/kopek-mamalari-c-560001 url adresine gidilir
+* Aradýgýnýz urunu bulabildiniz mi sorusuna evet secabý verilir
+* 'Geri bildiriminiz için teþekkür ederiz' içerikli mesaj beklenir
+
+Scenario: ControlofHeaderFilter
+* https://www.hepsiburada.com/kopek-mamalari-c-560001 url adresine gidilir
+* En yüksek fiyat alanýna týklanýr
+* Ürünlerin en yüksek fiyatlý ürünler baþlarda olcak þekilde ürün sýralamasý gözlenir
